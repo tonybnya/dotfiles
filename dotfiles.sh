@@ -11,15 +11,13 @@ REPO_DIR="$HOME/dev/dotfiles"
 
 echo "🔄 Updating dotfiles repo..."
 
-# List of "source|destination" pairs
-mapfile -t paths < <(cat <<EOF
-$HOME/.tmux.conf|$REPO_DIR/tmux/.tmux.conf
-$HOME/.tmux/plugins|$REPO_DIR/tmux/plugins
-$HOME/.zshrc|$REPO_DIR/zsh/.zshrc
-$HOME/.config/nvim|$REPO_DIR/nvim
-$HOME/dev/snippets|$REPO_DIR/dev/snippets
-$HOME/productivity|$REPO_DIR/productivity
-EOF
+paths=(
+  "$HOME/.tmux.conf|$REPO_DIR/tmux/.tmux.conf"
+  "$HOME/.tmux/plugins|$REPO_DIR/tmux/plugins"
+  "$HOME/.zshrc|$REPO_DIR/zsh/.zshrc"
+  "$HOME/.config/nvim|$REPO_DIR/nvim"
+  "$HOME/dev/snippets|$REPO_DIR/dev/snippets"
+  "$HOME/productivity|$REPO_DIR/productivity"
 )
 
 for pair in "${paths[@]}"; do
@@ -40,7 +38,6 @@ done
 
 cd "$REPO_DIR" || { echo "❌ Failed to enter repo directory"; exit 1; }
 
-# Git commit & push
 git add .
 COMMIT_MSG="update dotfiles: $(date '+%Y-%m-%d %H:%M:%S')"
 git commit -m "$COMMIT_MSG"
