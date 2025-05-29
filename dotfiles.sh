@@ -22,6 +22,7 @@ declare -A files=(
 
 for src in "${!files[@]}"; do
   dest="${files[$src]}"
+  echo "🔍 Checking: $src → $dest"
 
   if [[ -e "$src" ]]; then
     mkdir -p "$(dirname "$dest")"
