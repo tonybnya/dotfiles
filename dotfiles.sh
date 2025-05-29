@@ -12,7 +12,7 @@
 # echo "🔄 Updating dotfiles repo..."
 #
 # paths=(
-#   "$HOME/.tmux.conf|$REPO_DIR/tmux/.tmux.conf"
+#   "$HOME/.tmux.conf|$REPO_DIR/.tmux.conf"
 #   "$HOME/.zshrc|$REPO_DIR/.zshrc"
 #   "$HOME/.config|$REPO_DIR/.config"
 #   "$HOME/dev/snippets|$REPO_DIR/snippets"
@@ -47,7 +47,7 @@ REPO_DIR="$HOME/dev/dotfiles"
 echo "🔄 Updating dotfiles repo..."
 
 paths=(
-  "$HOME/.tmux.conf|$REPO_DIR/tmux/.tmux.conf"
+  "$HOME/.tmux.conf|$REPO_DIR/.tmux.conf"
   "$HOME/.zshrc|$REPO_DIR/.zshrc"
   "$HOME/.config|$REPO_DIR/.config"
   "$HOME/dev/snippets|$REPO_DIR/snippets"
