@@ -21,26 +21,30 @@ declare -A files=(
 )
 
 for src in "${!files[@]}"; do
-  dest=${files[$src]}
-  mkdir -p "$(dirname "$dest")"
+  dest="${files[$src]}"
 
-  if [ -d "$src" ]; then
-    cp -ru "$src" "$dest" && echo "📁 Synced directory: $src → $dest"
-  elif [ -f "$src" ]; then
-    cp -u "$src" "$dest" && echo "📄 Synced file: $src → $dest"
+  if [[ -e "$src" ]]; then
+    mkdir -p "$(dirname "$dest")"
+    if [[ -d "$src" ]]; then
+      cp -ru "$src" "$dest"
+      echo "📁 Copied directory: $src → $dest"
+    else
+      cp -u "$src" "$dest"
+      echo "📄 Copied file: $src → $dest"
+    fi
   else
-    echo "⚠️  Skipped (not found): $src"
+    echo "⚠️  Skipped: $src (does not exist)"
   fi
 done
 
-cd "$REPO_DIR" || { echo "❌ Failed to change to $REPO_DIR"; exit 1; }
-
-if [ ! -d .git ]; then
-  echo "❌ This is not a git repository!"
-  exit 1
-fi
+cd "$REPO_DIR" || { echo "❌ Could not change directory to $REPO_DIR"; exit 1; }
 
 git add .
-COMMIT_MSG="update dotfiles: $(date '+%Y-%m-%d %H:%M:%S')"
-git commit -m "$COMMIT_MSG"
-git push && echo "🚀 Dotfiles updated and pushed successfully!"
+
+if git diff --cached --quiet; then
+  echo "✅ No changes to commit."
+else
+  COMMIT_MSG="update dotfiles: $(date '+%Y-%m-%d %H:%M:%S')"
+  git commit -m "$COMMIT_MSG"
+  git push && echo "🚀 Dotfiles updated and pushed successfully!"
+fi
