@@ -13,9 +13,8 @@
 #
 # paths=(
 #   "$HOME/.tmux.conf|$REPO_DIR/tmux/.tmux.conf"
-#   "$HOME/.tmux/plugins|$REPO_DIR/tmux/plugins"
 #   "$HOME/.zshrc|$REPO_DIR/zsh/.zshrc"
-#   "$HOME/.config/nvim|$REPO_DIR/nvim"
+#   "$HOME/.config|$REPO_DIR/.config"
 #   "$HOME/dev/snippets|$REPO_DIR/dev/snippets"
 #   "$HOME/productivity|$REPO_DIR/productivity"
 # )
@@ -49,9 +48,7 @@ echo "🔄 Updating dotfiles repo..."
 
 paths=(
   "$HOME/.tmux.conf|$REPO_DIR/tmux/.tmux.conf"
-  "$HOME/.tmux/plugins|$REPO_DIR/.tmux/plugins"
   "$HOME/.zshrc|$REPO_DIR/zsh/.zshrc"
-  "$HOME/.config/nvim|$REPO_DIR/nvim"
   "$HOME/.config|$REPO_DIR/.config"
   "$HOME/dev/snippets|$REPO_DIR/dev/snippets"
   "$HOME/productivity|$REPO_DIR/productivity"
