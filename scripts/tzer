@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Script: tzer
+# Description: Fuzzy find into selected directories, then open a new tmux session in the selected one with its name
+
+session=$(find ~ ~/Desktop ~/Downloads ~/dev ~/dev/snippets ~/productivity -mindepth 1 -maxdepth 1 -type d | fzf)
+[ -z "$session" ] && exit 1
+session_name=$(basename "$session" | tr . _)
+
+if ! tmux has-session -t "$session_name" 2> /dev/null; then
+  tmux new-session -s "$session_name" -c "$session" -d
+fi
+
+# If inside tmux, switch; if outside, attach
+if [ -n "$TMUX" ]; then
+  tmux switch-client -t "$session_name"
+else
+  tmux attach-session -t "$session_name"
+fi

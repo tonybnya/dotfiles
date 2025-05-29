@@ -13,10 +13,10 @@
 #
 # paths=(
 #   "$HOME/.tmux.conf|$REPO_DIR/tmux/.tmux.conf"
-#   "$HOME/.zshrc|$REPO_DIR/zsh/.zshrc"
+#   "$HOME/.zshrc|$REPO_DIR/.zshrc"
 #   "$HOME/.config|$REPO_DIR/.config"
-#   "$HOME/dev/snippets|$REPO_DIR/dev/snippets"
-#   "$HOME/productivity|$REPO_DIR/productivity"
+#   "$HOME/dev/snippets|$REPO_DIR/snippets"
+#   "$HOME/productivity|$REPO_DIR/scripts"
 # )
 #
 # for pair in "${paths[@]}"; do
@@ -48,10 +48,10 @@ echo "🔄 Updating dotfiles repo..."
 
 paths=(
   "$HOME/.tmux.conf|$REPO_DIR/tmux/.tmux.conf"
-  "$HOME/.zshrc|$REPO_DIR/zsh/.zshrc"
+  "$HOME/.zshrc|$REPO_DIR/.zshrc"
   "$HOME/.config|$REPO_DIR/.config"
-  "$HOME/dev/snippets|$REPO_DIR/dev/snippets"
-  "$HOME/productivity|$REPO_DIR/productivity"
+  "$HOME/dev/snippets|$REPO_DIR/snippets"
+  "$HOME/productivity|$REPO_DIR/scripts"
 )
 
 for pair in "${paths[@]}"; do

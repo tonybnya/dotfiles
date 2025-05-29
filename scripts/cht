@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# Script: cht
+# Description: Cheat Sheet script to query cht.sh
+
+# Common programming languages and frameworks
+languages=$(echo "bash c cpp css dockerfile fastapi flask git golang html javascript mongodb mysql nodejs postgresql python react rust sqlite tailwind typescript vite" | tr " " "\n")
+
+# Useful core Linux/Unix commands and CLI tools
+core_utils=$(echo "awk curl find fzf grep jq sed tar tmux unzip vim wget xargs zoxide" | tr " " "\n")
+
+selected=$(echo -e "$languages\n$core_utils" | fzf)
+
+read -p "Enter a query: " query
+
+# if echo "$languages" | grep -qs $selected; then
+#   tmux split-window -p 50 -h bash -c "curl cht.sh/$selected/$(echo "$query" | tr " " "+") | less"
+# else
+#   tmux split-window -p 50 -h bash -c "curl cht.sh/$selected~$query | less"
+# fi
+
+# Format query
+if echo "$languages" | grep -qs "^$selected$"; then
+  url="cht.sh/$selected/$(echo "$query" | tr ' ' '+')"
+else
+  url="cht.sh/$selected~$query"
+fi
+
+# Run in tmux if inside it; otherwise run in the terminal
+if [[ -n "$TMUX" ]]; then
+  tmux split-window -p 50 -h bash -c "curl $url | less"
+else
+  curl "$url" | less
+fi
+
