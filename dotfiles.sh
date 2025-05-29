@@ -27,7 +27,9 @@ for pair in "${paths[@]}"; do
     if [[ -d "$src" ]]; then
       rsync -a --delete "$src/" "$dest/"
     else
-      cp -u "$src" "$dest"
+      # cp -u "$src" "$dest"
+      # cp -p "$src" "$dest"
+      rsync -a "$src" "$dest"
     fi
     echo "✅ Synced: $src"
   else
