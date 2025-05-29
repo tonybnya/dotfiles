@@ -2,7 +2,7 @@
 
 # ======================================
 # Script Name : dotfiles.sh
-# Description : Centralize dotfiles and commit to GitHub
+# Description : Sync local config files into dotfiles repo and push
 # Usage       : ./dotfiles.sh
 # Author      : @tonybnya
 # ======================================
@@ -11,7 +11,7 @@ REPO_DIR="$HOME/dev/dotfiles"
 
 echo "🔄 Updating dotfiles repo..."
 
-declare -A files=(
+declare -A sources=(
   ["$HOME/.tmux.conf"]="$REPO_DIR/tmux/.tmux.conf"
   ["$HOME/.tmux/plugins/"]="$REPO_DIR/tmux/plugins/"
   ["$HOME/.zshrc"]="$REPO_DIR/zsh/.zshrc"
@@ -21,8 +21,8 @@ declare -A files=(
 )
 
 # Copy each file or directory into the repo
-for src in "${!files[@]}"; do
-  dest=${files[$src]}
+for src in "${!sources[@]}"; do
+  dest=${sources[$src]}
   mkdir -p "$(dirname "$dest")"
 
   if [ -d "$src" ]; then
