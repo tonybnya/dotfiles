@@ -23,7 +23,7 @@ keymap.set({ "n", "v" }, "L", "$", { desc = "End of line" })
 keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selection down" })
 keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
 
--- Toggle relative numbers
+-- Toggle relative number
 keymap.set("n", "<leader>rn", function()
   vim.wo.relativenumber = not vim.wo.relativenumber
 end, { desc = "Toggle relative line numbers" })
