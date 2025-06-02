@@ -114,8 +114,10 @@ alias prod="$HOME/productivity/"
 alias snips="$HOME/dev/snippets/"
 alias xx="exit"
 
-alias ..="cd $HOME"
+alias ..="cd .."
 alias vol="cd /Volumes/'TOSHIBA EXT'/"
+
+alias tst="touch timestamps.txt && nvim timestamps.txt"
 
 # Aliases for Vim
 alias py="python3"
