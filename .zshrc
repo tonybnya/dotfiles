@@ -106,6 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # Aliases for file navigation
 alias cl="clear"
 alias lah="ls -lah"
+alias ll="ls -lah --color=auto"
 alias dev="$HOME/dev/"
 alias desk="$HOME/Desktop/"
 alias docs="$HOME/Documents/"

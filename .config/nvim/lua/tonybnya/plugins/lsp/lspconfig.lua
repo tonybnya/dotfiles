@@ -1,4 +1,5 @@
 return {
+	"williamboman/mason.nvim", -- ← Add this line
 	"neovim/nvim-lspconfig",
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
