@@ -48,12 +48,10 @@ return {
 				"pyright",
 				"ruff",
 				"sourcery",
-				"pylazor",
 				"pyrefly",
 
 				-- Infra & DevOps
 				"dockerls",
-				"docker_compose_language_server",
 				"ansiblels",
 				"tflint",
 				"terraformls",

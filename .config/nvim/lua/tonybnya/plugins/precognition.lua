@@ -1,5 +1,6 @@
 return {
 	"tris203/precognition.nvim",
+	enabled = false, -- ignore the plugin without deleting or commenting it out
 	event = "VeryLazy",
 	opts = {
 		startVisible = true,

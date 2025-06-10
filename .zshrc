@@ -159,3 +159,7 @@ export PATH="$HOME/bin:$PATH"
 
 # npm global directory
 export PATH="$HOME/.npm-global/bin:$PATH"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
