@@ -150,6 +150,11 @@ eval $(thefuck --alias fk)
 # Setup zoxide
 eval "$(zoxide init zsh)"
 
+# enable shell autocompletion for uv commands
+if command -v uv &> /dev/null; then
+  eval "$(uv generate-shell-completion zsh)"
+fi
+
 . "$HOME/.local/bin/env"
 
 # Activate syntax highlighting and autosuggestions
