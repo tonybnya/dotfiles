@@ -1125,6 +1125,9 @@ require("lazy").setup({
 	require("kickstart.plugins.gitsigns"), -- adds gitsigns recommend keymaps
 	require("custom.plugins.noice"),
 	require("custom.plugins.rose-pine"),
+	require("custom.plugins.lazygit"),
+	require("custom.plugins.windsurf"),
+	require("custom.plugins.mini"),
 	-- require("custom.plugins.kanagawa"),
 
 	-- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`

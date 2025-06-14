@@ -135,6 +135,9 @@ alias vic="nvim $HOME/.config/nvim/"
 # Aliases for Yazi
 alias y="yazi"
 
+# Aliases for Lazygit
+alias lg="lazygit"
+
 # Set up fzf default options including layout preferences
 export FZF_DEFAULT_OPTS="--height 40% --layout reverse --border"
 
