@@ -226,6 +226,10 @@ vim.keymap.set("n", "<leader>ya", "ggVGy", { desc = "Copy entire file" })
 vim.keymap.set("v", "<leader>y", '"+y', { desc = "Copy selection to clipboard" })
 vim.keymap.set("n", "<leader>Y", '"+y$', { desc = "Copy to end of line to clipboard" })
 
+-- Deleting Operations
+vim.keymap.set("n", "<leader>da", "ggVGd", { desc = "Delete entire file" })
+vim.keymap.set("n", "<leader>di", "ggVGc", { desc = "Delete entire file and insert" })
+
 -- Enhanced Movement
 vim.keymap.set({ "n", "v" }, "H", "^", { desc = "Start of line" })
 vim.keymap.set({ "n", "v" }, "L", "$", { desc = "End of line" })
@@ -1128,6 +1132,8 @@ require("lazy").setup({
 	require("custom.plugins.lazygit"),
 	require("custom.plugins.windsurf"),
 	require("custom.plugins.mini"),
+	require("custom.plugins.floaterm"),
+	require("custom.plugins.typr"),
 	-- require("custom.plugins.kanagawa"),
 
 	-- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
