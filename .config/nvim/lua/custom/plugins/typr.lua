@@ -1,5 +1,8 @@
 return {
 	"nvzone/typr",
+	dependencies = {
+		"nvzone/volt", -- Required dependency for UI components
+	},
 	cmd = "Typr", -- Load plugin only when Typr command is used
 	keys = {
 		{ "<leader>ty", "<cmd>Typr<cr>", desc = "Open Typr typing test" },
