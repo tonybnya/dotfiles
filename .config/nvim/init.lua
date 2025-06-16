@@ -150,7 +150,9 @@ vim.o.splitbelow = true
 --   See `:help lua-options`
 --   and `:help lua-options-guide`
 vim.o.list = true
-vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
+-- vim.opt.listchars = { trail = "·", nbsp = "␣" }
+-- vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
+vim.opt.listchars = { tab = "  ", trail = "·", nbsp = "␣" }
 
 -- Preview substitutions live, as you type!
 vim.o.inccommand = "split"
@@ -339,7 +341,7 @@ require("lazy").setup({
 	--    }
 	-- install = { colorscheme = { "tokyonight" } },
 	-- install = { colorscheme = { "kanagawa" } },
-	-- install = { colorscheme = { "rose-pine" } },
+	install = { colorscheme = { "rose-pine" } },
 	--
 	-- Here is a more advanced example where we pass configuration
 	-- options to `gitsigns.nvim`.
@@ -503,7 +505,7 @@ require("lazy").setup({
 					},
 					-- Optional visual tuning
 					sorting_strategy = "ascending",
-					winblend = 10,
+					winblend = 0,
 				},
 				-- pickers = {}
 				extensions = {
@@ -511,7 +513,7 @@ require("lazy").setup({
 						require("telescope.themes").get_dropdown(),
 					},
 				},
-			}) -- <- This closing brace was missing!
+			})
 
 			-- Enable Telescope extensions if they are installed
 			pcall(require("telescope").load_extension, "fzf")
@@ -534,7 +536,7 @@ require("lazy").setup({
 			vim.keymap.set("n", "<leader>/", function()
 				-- You can pass additional configuration to Telescope to change the theme, layout, etc.
 				builtin.current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
-					winblend = 10,
+					winblend = 0,
 					previewer = false,
 				}))
 			end, { desc = "[/] Fuzzily search in current buffer" })
@@ -888,7 +890,8 @@ require("lazy").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
 				-- Conform can also run multiple formatters sequentially
-				python = { "isort", "black" },
+				python = { "isort", "ruff" },
+				-- python = { "isort", "black" },
 				--
 				-- You can use 'stop_after_first' to run the first available formatter from the list
 				javascript = { "prettierd", "prettier", stop_after_first = true },
@@ -1020,14 +1023,6 @@ require("lazy").setup({
 	-- 	vim.cmd.colorscheme("tokyonight-night")
 	-- end,
 	-- },
-	-- {
-	-- 	"rebelot/kanagawa.nvim",
-	-- 	name = "kanagawa", -- Add explicit name
-	-- 	priority = 1000,
-	-- 	config = function()
-	-- 		vim.cmd.colorscheme("kanagawa")
-	-- 	end,
-	-- },
 
 	-- Highlight todo, notes, etc in comments
 	{
@@ -1121,19 +1116,20 @@ require("lazy").setup({
 	--  Here are some example plugins that I've included in the Kickstart repository.
 	--  Uncomment any of the lines below to enable them (you will need to restart nvim).
 	--
+	require("custom.plugins.nvim-tree"),
+	require("custom.plugins.noice"),
+	require("custom.plugins.lazygit"),
+	require("custom.plugins.windsurf"),
+	-- require("custom.plugins.mini-animate"),
+	require("custom.plugins.floaterm"),
+	require("custom.plugins.typr"),
+	require("custom.plugins.rose-pine"),
 	-- require("kickstart.plugins.debug"),
 	require("kickstart.plugins.indent_line"),
 	require("kickstart.plugins.lint"),
 	require("kickstart.plugins.autopairs"),
-	require("kickstart.plugins.neo-tree"),
+	-- require("kickstart.plugins.neo-tree"),
 	require("kickstart.plugins.gitsigns"), -- adds gitsigns recommend keymaps
-	require("custom.plugins.noice"),
-	require("custom.plugins.rose-pine"),
-	require("custom.plugins.lazygit"),
-	require("custom.plugins.windsurf"),
-	require("custom.plugins.mini"),
-	require("custom.plugins.floaterm"),
-	require("custom.plugins.typr"),
 	-- require("custom.plugins.kanagawa"),
 
 	-- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`

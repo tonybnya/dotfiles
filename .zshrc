@@ -130,7 +130,7 @@ alias vim="nvim"
 alias viz="nvim $HOME/.zshrc"
 alias viv="nvim $HOME/.vimrc"
 alias vic="nvim $HOME/.config/nvim/"
-# alias vf="vim $(fzf)"
+# alias vzf="vim $(fzf)"
 
 # Aliases for Yazi
 alias y="yazi"
