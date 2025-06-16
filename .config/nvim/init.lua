@@ -501,7 +501,7 @@ require("lazy").setup({
 						height = 0.95, -- Total popup height
 						preview_cutoff = 120,
 						preview_width = 0.7,
-						prompt_position = "top",
+						-- prompt_position = "top",
 					},
 					-- Optional visual tuning
 					sorting_strategy = "ascending",
