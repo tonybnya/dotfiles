@@ -171,3 +171,10 @@ export PATH="$HOME/.npm-global/bin:$PATH"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Go binaries
+export PATH="$PATH:$HOME/go/bin"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

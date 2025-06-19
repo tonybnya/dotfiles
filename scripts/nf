@@ -38,12 +38,11 @@ case "$filename" in
       echo "    main()"
     } > "$filename"
     ;;
-
-  *.js)
+  *.js|*.ts)
     {
       echo "/**"
       echo " * Script Name : $filename"
-      echo " * Description : Describe what this JavaScript file does"
+      echo " * Description : Describe what this JavaScript/TypeScript file does"
       echo " * Usage       : node $(basename "$filename")"
       echo " * Author      : @tonybnya"
       echo " */"
