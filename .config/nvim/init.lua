@@ -1121,6 +1121,7 @@ require("lazy").setup({
 	require("custom.plugins.lazygit"),
 	require("custom.plugins.windsurf"),
 	-- require("custom.plugins.mini-animate"),
+	require("custom.plugins.nvim-rafce"),
 	require("custom.plugins.floaterm"),
 	require("custom.plugins.typr"),
 	require("custom.plugins.rose-pine"),
