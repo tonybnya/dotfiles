@@ -214,7 +214,14 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
 -- [[ Custom Keymaps ]]
+-- ViMongo
+vim.keymap.set("n", "<leader>vm", ":ViMongo<CR>", { desc = "ViMongo", noremap = true, silent = true })
 --  See `:help vim.keymap.set()`
+
+-- Markdown Preview Keymaps
+vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreview<CR>", { desc = "Start Markdown Preview" })
+vim.keymap.set("n", "<leader>ms", "<cmd>MarkdownPreviewStop<CR>", { desc = "Stop Markdown Preview" })
+vim.keymap.set("n", "<leader>mt", "<cmd>MarkdownPreviewToggle<CR>", { desc = "Toggle Markdown Preview" })
 
 -- File Operations
 vim.keymap.set("n", "<leader>w", "<cmd>w<CR>", { desc = "Save file" })
@@ -1131,6 +1138,8 @@ require("lazy").setup({
 	require("kickstart.plugins.autopairs"),
 	-- require("kickstart.plugins.neo-tree"),
 	require("kickstart.plugins.gitsigns"), -- adds gitsigns recommend keymaps
+	require("custom.plugins.vimongo"),
+	require("custom.plugins.markdown-preview"),
 	-- require("custom.plugins.kanagawa"),
 
 	-- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
