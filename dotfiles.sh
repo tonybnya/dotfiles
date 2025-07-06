@@ -17,7 +17,7 @@ paths=(
   "$HOME/.config|$REPO_DIR/.config"
   "$HOME/dev/snippets|$REPO_DIR/snippets"
   "$HOME/productivity|$REPO_DIR/scripts"
-  "$HOME/obsidian-vault/$REPO_DIR/obsidian-vault"
+  "$HOME/obsidian-vault|$REPO_DIR/obsidian-vault"
 )
 
 for pair in "${paths[@]}"; do
