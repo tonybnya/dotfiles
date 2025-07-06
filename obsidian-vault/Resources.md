@@ -14,7 +14,7 @@ tags:
 
 ### API Testing
 
-| Tool           | Type                  | Platform         | Cost         | Key Features                                                                 |
+| Tool           | Category                  | Platform         | Cost         | Key Features                                                                 |
 |----------------|-----------------------|------------------|--------------|------------------------------------------------------------------------------|
 | **Postman**    | #api #testing         | Web, Desktop     | Freemium     | Request building, docs, automation, env vars, team collaboration             |
 | **Insomnia**   | #api #testing         | Desktop          | Free/Premium | GraphQL, OpenAPI, Git sync, collaboration                                    |
@@ -28,7 +28,7 @@ tags:
 
 ### AI & LLM Services
 
-| Tool         | Type             | Provider     | Access         | Cost         | Key Features                                                |
+| Tool         | Category             | Provider     | Access         | Cost         | Key Features                                                |
 |--------------|------------------|--------------|----------------|--------------|-------------------------------------------------------------|
 | **ChatGPT**  | #ai #llm         | OpenAI       | Web, API       | Free/Premium | NLP, code help, creative writing, reasoning                 |
 | **Claude.ai**| #ai #llm         | Anthropic    | Web, API       | Free/Premium | Long context, doc analysis, reasoning                       |
@@ -42,7 +42,7 @@ tags:
 
 ### Backend as a Service (BaaS)
 
-| Tool        | Type              | Features                                                                 | Pricing         |
+| Tool        | Category              | Features                                                                 | Pricing         |
 |-------------|-------------------|--------------------------------------------------------------------------|-----------------|
 | **Supabase**| #baas #database   | PostgreSQL, auth, real-time, auto APIs                                  | Free tier       |
 | **Appwrite**| #baas #opensource | Self-hosted, auth, DB, storage, cloud functions                          | Free/Paid       |
@@ -57,7 +57,7 @@ tags:
 
 ### Design Inspiration
 
-| Tool              | Type           | Content                       | Features                                                  |
+| Tool              | Category           | Content                       | Features                                                  |
 |-------------------|----------------|-------------------------------|-----------------------------------------------------------|
 | **Dribbble**      | #design        | UI/UX, illustrations          | Portfolios, hiring, design trends                         |
 | **Awwwards**      | #design #web   | Creative web design           | Daily picks, agency galleries, trends                     |
@@ -69,7 +69,7 @@ tags:
 
 ### Icons & Typography
 
-| Tool           | Type       | Format          | License        | Features                                             |
+| Tool           | Category       | Format          | License        | Features                                             |
 |----------------|------------|------------------|----------------|------------------------------------------------------|
 | **Font Awesome** | #icons   | SVG, Web Font    | Free/Pro       | Multiple styles, huge library                        |
 | **Google Fonts**| #fonts    | Web Fonts        | Free           | Easy integration, wide variety                       |
@@ -83,7 +83,7 @@ tags:
 
 ### Job Platforms
 
-| Platform        | Type          | Focus             | Features                                                             |
+| Platform        | Category          | Focus             | Features                                                             |
 |------------------|---------------|-------------------|----------------------------------------------------------------------|
 | **LinkedIn**     | #jobs         | Networking         | Job search, skill tracking, company research                         |
 | **Upwork**       | #freelance    | Remote/Freelance   | Escrow payments, hourly or fixed, trusted client reviews             |
@@ -95,7 +95,7 @@ tags:
 
 ### Learning Resources
 
-| Platform           | Type              | Cost     | Features                                             |
+| Platform           | Category              | Cost     | Features                                             |
 |--------------------|-------------------|----------|------------------------------------------------------|
 | **freeCodeCamp**   | #learning         | Free     | Interactive coding, certification, huge community    |
 | **The Odin Project** | #learning #webdev | Free     | Full-stack web dev, open source, project-based       |
@@ -106,9 +106,10 @@ tags:
 
 ### Productivity Tools
 
-| Tool             | Type         | Features                                                                  |
+| Tool             | Category         | Features                                                                  |
 |------------------|--------------|---------------------------------------------------------------------------|
 | **EmailJS**      | #email       | Send email from frontend, multiple provider support, templates            |
+| **FormSubmit**      | #email       | Send email from frontend, multiple provider support, templates            |
 | **Moment.js**    | #datetime    | Easy date formatting & parsing, timezones, human-readable output          |
 | **QRCode Monkey**| #qr          | Custom QR codes, high-res download, color/branding options                |
 | **Squoosh**      | #images      | Image compression in browser, live previews                               |
@@ -118,7 +119,7 @@ tags:
 
 ### Hosting & Deployment
 
-| Platform        | Type               | Features                                                                 |
+| Platform        | Category               | Features                                                                 |
 |------------------|--------------------|--------------------------------------------------------------------------|
 | **Vercel**       | #hosting #deployment | Next.js optimization, serverless functions, edge caching                 |
 | **Netlify**      | #hosting #deployment | Git-based CI/CD, forms, functions, edge network                         |
