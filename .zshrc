@@ -175,6 +175,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # Go binaries
 export PATH="$PATH:$HOME/go/bin"
 
-
 # Load Angular CLI autocompletion.
 source <(ng completion script)
