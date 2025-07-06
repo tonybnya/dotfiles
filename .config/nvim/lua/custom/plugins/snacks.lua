@@ -19,6 +19,21 @@ return {
 		scroll = { enabled = true },
 		statuscolumn = { enabled = true },
 		words = { enabled = true },
+		zen = {
+			toggles = {
+				dim = true,
+				git_signs = false,
+				mini_diff_signs = false,
+			},
+			show = {
+				statusline = false,
+				tabline = false,
+			},
+			win = { style = "zen" },
+		},
+		terminal = {
+			win = { style = "terminal" },
+		},
 		styles = {
 			notification = {
 				-- wo = { wrap = true } -- Wrap notifications
