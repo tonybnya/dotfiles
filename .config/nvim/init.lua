@@ -580,6 +580,11 @@ require("lazy").setup({
 		},
 	},
 	{
+		"ThePrimeagen/vim-be-good",
+		cmd = { "VimBeGood" },
+		vim.keymap.set("n", "<leader>vbg", "<cmd>VimBeGood<CR>", { desc = "Launch VimBeGood" }),
+	},
+	{
 		-- Main LSP Configuration
 		"neovim/nvim-lspconfig",
 		dependencies = {
@@ -1140,6 +1145,7 @@ require("lazy").setup({
 	require("kickstart.plugins.gitsigns"), -- adds gitsigns recommend keymaps
 	require("custom.plugins.vimongo"),
 	require("custom.plugins.markdown-preview"),
+	require("custom.plugins.snacks"),
 	-- require("custom.plugins.kanagawa"),
 
 	-- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
