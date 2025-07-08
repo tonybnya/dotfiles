@@ -1,12 +1,2 @@
 [manager]
 show_hidden = true
-
-[manager]
-prepend_keymap = [
-  { on = "l", run = "open", desc = "Open file" }
-]
-
-[open]
-prepend_rules = [
-  { mime = "text/*", run = "nvim \"$0\"", desc = "Open in Neovim" }
-]
