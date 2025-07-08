@@ -1,0 +1,65 @@
+Step 1: Identify your goals
+- why am I making this project?
+- who is this project for?
+- what is gonna make it valuable?
+
+Step 2: Write user story (user centric design)
+- write down exactly what a user should be able to do
+- how the app going to work for the users
+examples:
+- user can upload a file
+- user can create an account
+- user can view a dashboard
+
+Step 3: Define your data models
+- what information I need to store?
+- how it related to the other data?
+- what those relationships look like?
+
+Step 4: Nail an MVP (Minimum Viable Product)
+- do I absolutely need this for the app to function? (if no, remove)
+- what actually matters?
+- what gets you to a working prototype?
+
+Step 5: Draw stupid simple prototype (very basic wireframe of the app)
+- how the login form goes? 
+- what happens after someone upload a file?
+- how do I navigate between the different pages?
+
+Step 6: Understand the project's future
+- week-end project?
+- scaling project over weeks, months?
+- hobby project?
+- project with real users?
+
+Step 7: Drill into the specific components (Architecture)
+CORE ESSENTIALS COMPONENTS
+- browser extension?
+- local script?
+- webservice?
+- runs locally?
+- backend API?
+- frontend interface?
+- mobile app?
+
+Step 8: Picking a stack
+- pick the best one for the project
+- pick the simplest stack that fits within relative skillset, ideal to accomplish the goals
+- can I deploy it?
+
+Step 9: Overall development process
+- create a project skeleton
+  - basic folder structure
+  - development environments
+  - version control
+- setting up database and creating models
+- build the backend routes
+  - API endpoints (and test)
+- build the frontend interface
+  - connect to backend
+  - focus on UX/UI
+- project iteration
+  - gradually add features
+  - test as I go
+  - deploy early and often even if the app isn't 100%
+- automated deployments and testing (if necessary)
