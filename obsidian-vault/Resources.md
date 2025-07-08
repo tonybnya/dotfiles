@@ -3,9 +3,9 @@ id: resources
 aliases:
   - resources
 tags:
-  - resources
-  - development
-  - tools
+  - #resources
+  - #development
+  - #tools
 ---
 
 # Resources
