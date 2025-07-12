@@ -1,4 +1,7 @@
 {
   "vimMode": true,
-  "showLineNumber": true
+  "showLineNumber": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "6 - Main Notes",
+  "alwaysUpdateLinks": true
 }

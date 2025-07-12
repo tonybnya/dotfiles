@@ -121,8 +121,9 @@ alias vol="cd /Volumes/'TOSHIBA EXT'/"
 
 alias tst="touch timestamps.txt && nvim timestamps.txt"
 
-# Aliases for Vim
+# Aliases for Python
 alias py="python3"
+alias python="python3"
 
 # Aliases for Vim
 alias v="nvim"
@@ -132,6 +133,12 @@ alias viz="nvim $HOME/.zshrc"
 alias viv="nvim $HOME/.vimrc"
 alias vic="nvim $HOME/.config/nvim/"
 # alias vzf="vim $(fzf)"
+
+# Alias for source
+alias so="source"
+
+# Alias for source .zshrc
+alias szsh="source $HOME/.zshrc"
 
 # Aliases for Yazi
 alias y="yazi"
@@ -178,3 +185,13 @@ export PATH="$PATH:$HOME/go/bin"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+# move to CWD when exiting Yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
