@@ -2,7 +2,7 @@
 # Script: vzf
 # Description: Fuzzy-find a file (avoiding system-protected directories), then open it in vim
 
-search_dirs=(~ ~/Documents ~/Downloads ~/dev ~/Desktop)
+search_dirs=(~ ~/Documents ~/Downloads ~/dev ~/Desktop ~/productivity)
 
 # selected_file=$(find "${search_dirs[@]}" -type f 2>/dev/null | fzf --height 40% --preview 'bat --style=numbers --color=always {} 2>/dev/null' --preview-window=right:60%)@
 selected=$(find "${search_dirs[@]}" \( -type f -o -type d \) 2>/dev/null | fzf --height 40% --preview 'bat --style=numbers --color=always {} 2>/dev/null || ls -la {}' --preview-window=right:60%)
