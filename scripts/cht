@@ -6,7 +6,7 @@
 languages=$(echo "bash c cpp css dockerfile fastapi flask git golang html javascript mongodb mysql nodejs postgresql python react rust sqlite tailwind typescript vite" | tr " " "\n")
 
 # Useful core Linux/Unix commands and CLI tools
-core_utils=$(echo "awk curl find fzf grep jq sed tar tmux unzip vim wget xargs zoxide" | tr " " "\n")
+core_utils=$(echo "awk curl find fzf grep jq sed tar tmux unzip vim wget xargs yazi zoxide" | tr " " "\n")
 
 selected=$(echo -e "$languages\n$core_utils" | fzf)
 
