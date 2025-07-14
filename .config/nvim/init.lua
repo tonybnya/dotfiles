@@ -1129,6 +1129,8 @@ require("lazy").setup({
 	--  Uncomment any of the lines below to enable them (you will need to restart nvim).
 	--
 	require("custom.plugins.nvim-tree"),
+	require("custom.plugins.nvim-treesitter"),
+	require("custom.plugins.nvim-treesitter-textobjects"),
 	require("custom.plugins.noice"),
 	require("custom.plugins.lazygit"),
 	require("custom.plugins.windsurf"),

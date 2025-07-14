@@ -13,15 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - Main Notes/test node.md",
+                "file": "2 - Source Materials/Articles/After 147 failed ChatGPT prompts, I had a breakdown and accidentally discovered something.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "test node"
+              "title": "After 147 failed ChatGPT prompts, I had a breakdown and accidentally discovered something"
+            }
+          },
+          {
+            "id": "d40207673b3abf36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6 - Main Notes/learn linux.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "learn linux"
+            }
+          },
+          {
+            "id": "209db371e490cf9f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6 - Main Notes/learn typescript.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "learn typescript"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -168,15 +197,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "70b8ed7eb15d7b50",
+  "active": "209db371e490cf9f",
   "lastOpenFiles": [
+    "6 - Main Notes/learn linux.md",
+    "2 - Source Materials/Courses/Boot dev - Learn Linux.md",
+    "6 - Main Notes/learn typescript.md",
+    "2 - Source Materials/Courses/Boot dev - Learn TypeScript.md",
+    "2 - Source Materials/Docs/Bash Documentation.md",
+    "2 - Source Materials/Articles/After 147 failed ChatGPT prompts, I had a breakdown and accidentally discovered something.md",
+    "6 - Main Notes/auto-évaluation de son environnement relationnel selon la méthode des 4 P.md",
+    "6 - Main Notes/approaching a coding project.md",
+    "2 - Source Materials/Courses",
+    "6 - Main Notes/test node.md",
     "6 - Main Notes/prompt to help improve the match between the cv and a position to apply for.md",
     "6 - Main Notes/pro tip to level up job search and find less competitive roles.md",
     "6 - Main Notes/lyra prompt - master-level AI prompt optimization specialist.md",
     "6 - Main Notes/dev resources center.md",
     "6 - Main Notes/coding project framework.md",
-    "6 - Main Notes/auto-évaluation de son environnement relationnel selon la méthode des 4 P.md",
-    "6 - Main Notes/approaching a coding project.md",
     "1 - Rough Notes/Reading things to look into.md",
     "5 - Template/template note.md",
     "3 - Tags/social.md",
@@ -185,26 +222,18 @@
     "3 - Tags/tech.md",
     "3 - Tags/productivity.md",
     "3 - Tags/ai.md",
-    "6 - Main Notes/test node.md",
     "3 - Tags/freelance.md",
     "2 - Source Materials/Posts/les 4P par Christian Sandjo.md",
     "6 - Main Notes/resources.md",
     "6 - Main Notes/coding-project-framework.md",
-    "6 - Main Notes/approaching-a-coding-task.md",
-    "2 - Source Materials/Posts/minchoi post 2.md",
-    "2 - Source Materials/Posts/minchoi post 1.md",
-    "2 - Source Materials/Articles/After 147 failed ChatGPT prompts, I had a breakdown and accidentally discovered something.md",
-    "6 - Main Notes/random note.md",
     "6 - Main Notes",
     "5 - Template",
     "4 - Indexes",
-    "3 - Tags/cli.md",
     "2 - Source Materials/Docs",
     "2 - Source Materials/Books",
     "2 - Source Materials/Posts",
     "2 - Source Materials/Videos",
     "2 - Source Materials/Articles",
-    "3 - Tags",
-    "2 - Source Materials"
+    "3 - Tags"
   ]
 }
