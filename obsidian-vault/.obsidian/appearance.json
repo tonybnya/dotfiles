@@ -1,5 +1,6 @@
 {
-  "cssTheme": "Rose Pine",
-  "textFontFamily": "0xProto Nerd Font Mono",
-  "baseFontSize": 14
+  "cssTheme": "Border",
+  "textFontFamily": "0xProto Nerd Font Mono,Menlo",
+  "baseFontSize": 14,
+  "monospaceFontFamily": "0xProto Nerd Font Mono,Menlo"
 }

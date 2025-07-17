@@ -14,7 +14,7 @@ Tags: [[cli]] [[dev]] [[learning]]
 | `history` | Print out the history of commands the user have types in the shell | `history`    |
 #### 1 - Terminal
 
-Historically, a `terminal` meant a physical device, essentially a keyboard and a screen, where you can type a command and get an output.
+Historically, a `terminal` meant a physical device, essentially a keyboard and a screen, where you can type a command on the keyboard and get an output on the screen.
 
 These days, it's a `terminal emulator`, i.e. a program that can emulate a physical terminal. It's a program that lets the user type commands into a window on a computer.
 

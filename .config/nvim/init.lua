@@ -1149,6 +1149,12 @@ require("lazy").setup({
 	require("custom.plugins.markdown-preview"),
 	require("custom.plugins.snacks"),
 	require("custom.plugins.obsidian"),
+	require("custom.plugins.marko"),
+	require("custom.plugins.smear"),
+	require("custom.plugins.autotag"),
+	require("custom.plugins.dashboard"),
+	require("custom.plugins.inline-diag"),
+	require("custom.plugins.neoscroll"),
 	-- require("custom.plugins.kanagawa"),
 
 	-- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
