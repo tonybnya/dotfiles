@@ -155,18 +155,6 @@ export FZF_DEFAULT_OPTS="--height 40% --layout reverse --border"
 [ -f /usr/local/opt/fzf/shell/completion.zsh ] && source /usr/local/opt/fzf/shell/completion.zsh
 [ -f /usr/local/opt/fzf/shell/key-bindings.zsh ] && source /usr/local/opt/fzf/shell/key-bindings.zsh
 
-# thefuck alias
-eval $(thefuck --alias)
-eval $(thefuck --alias fk)
-
-# Setup zoxide
-eval "$(zoxide init zsh)"
-
-# enable shell autocompletion for uv commands
-if command -v uv &> /dev/null; then
-  eval "$(uv generate-shell-completion zsh)"
-fi
-
 . "$HOME/.local/bin/env"
 
 # Activate syntax highlighting and autosuggestions
@@ -196,3 +184,21 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+# thefuck alias
+eval $(thefuck --alias)
+eval $(thefuck --alias fk)
+
+# Homebrew setup
+eval "$(/usr/local/bin/brew shellenv)"
+
+# Mise setup
+eval "$(/usr/local/bin/mise activate zsh)"
+
+# Setup zoxide
+eval "$(zoxide init zsh)"
+
+# enable shell autocompletion for uv commands
+if command -v uv &> /dev/null; then
+  eval "$(uv generate-shell-completion zsh)"
+fi

@@ -66,6 +66,24 @@ case "$filename" in
       echo "}"
     } > "$filename"
     ;;
+  *.rb)
+    {
+      echo "#!/usr/bin/env ruby"
+      echo ""
+      echo "# ======================================"
+      echo "# Script Name : $filename"
+      echo "# Description : Describe what this Ruby script does"
+      echo "# Usage       : ruby $(basename "$filename") [args]"
+      echo "# Author      : @tonybnya"
+      echo "# ======================================"
+      echo ""
+      echo "def main"
+      echo "  # Your code here"
+      echo "end"
+      echo ""
+      echo "main if __FILE__ == \$0"
+    } > "$filename"
+    ;;
   *)
     # If not a recognized extension, and not .txt, default to an empty .txt
     if [[ "$filename" != *.txt ]]; then
